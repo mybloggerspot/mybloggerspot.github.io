@@ -1,0 +1,12 @@
+.blogs{
+	display: flex;
+	align-items: center;
+}
+
+.blog{
+    width: 48%;
+	margin: 2%;
+	height: fit-content;
+	border: 1px solid rgb(98,0,238);
+	border-radius: 8px;
+}

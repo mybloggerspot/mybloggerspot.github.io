@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+wow{
+	color: rgb(98,0,238);
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #6200ee;
+	display: flex;
+	height: 85px;
+	text-align: center;
+	z-index: 2;
+}
+
+li{
+	align-items: center;
+	color: white;
+	font-size: 17.5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+a{
+	align-items: center;
+	color: white;
+	font-size: 17.5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+a:hover{
+	transition: all 0.5s ease;
+	color: rgb(0,0,0);
+}
+
+ul{
+	justify-content: space-between;
+	align-items: center;
+	list-style-type: none;
+	display: flex;
+	margin: 9px;
+	text-align: center;
+}
+
+#menu{
+	display: none;
+}
+
+button {
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  color: #fff;
+  background-color: #6200ee;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); /* black with 30% opacity */
+  cursor: pointer;
+  margin: 10px;
+}
+
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+::selection{
+	background-color: rgba(0,0,0,0);
+	color: rgb(98,0,238);
+}
+
+.links-mob{
+	display: none;
+}
+
+
+
+#back{
+	text-align: center!important;
+	color: white!important;
+	background-color: black!important;
+	width: 40px!important;
+	height: 40px!important;
+	border-radius: 40px!important;
+	box-shadow: none;
+}
+
+@media only screen and (max-width: 780px){
+	nav{
+		display: block;
+		height: fit-content;
+	}
+	
+	ul{
+		border-bottom-color: 1px solid black;
+	}
+	
+	.main-menu{
+		justify-content: left;
+	}
+	
+	.links{
+		display: none;
+	}
+	
+	li,a{
+		font-size: 20px;
+	}
+	#menu{
+	    display: block;
+		width: 50px;
+		height: 50px;
+		text-align: center;
+	    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0);
+    }
+}
